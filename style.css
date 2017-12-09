@@ -6,3 +6,8 @@
    max-height: 100%;
     width: auto;
 }
+.page-header{
+	float: left;
+	width: 100%;
+	background-color: #c3d7df;
+}
