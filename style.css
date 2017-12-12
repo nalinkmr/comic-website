@@ -11,3 +11,12 @@
 	width: 100%;
 	background-color: #c3d7df;
 }
+.list-inline{
+	list-style-type: none;
+	text-align: center;
+}
+.list-inline i{
+	font-size: 30px;
+	margin:20%;
+	padding: 15% 5% 5% 4%;
+}
