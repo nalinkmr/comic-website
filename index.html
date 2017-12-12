@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" >
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -104,7 +105,7 @@
     <div class="container">
       <section>
         <div class="page-header" id="features" align="center">
-        <h2 >FEATURES <small> some of the coolest features of my website.</small> </h2>
+        <h2 > <small> Features : some of the coolest features of my website.</small> </h2>
         </div> <!-- end of page header -->
         <div class="row">
           <div class="col-lg-6"> <!-- for the heading -->
@@ -114,10 +115,10 @@
           </p>
           </div>
           <div class="col-lg-3">  <!-- for the image 4 blocks -->
-            <img src="images/arrow.jpg" class="img-responsive" alt="comic-wallies" >
+            <img src="images/arrow1.jpg" class="img-responsive" id="arrow" alt="comic-wallies" >
           </div>
           <div class="col-lg-3">  <!-- for the image 4 blocks -->
-            <img src="images/colarge.jpg" class="img-responsive" alt="comic-wallies" >
+            <img src="images/colarge.jpg" class="img-responsive" id="colarge" alt="comic-wallies" >
           </div>
         </div> <!-- end of first row -->
         <hr>
@@ -134,7 +135,7 @@
             <div class="panel panel-default">
               <div class="panel-body">
                 <h4>Upload comics <span class="glyphicon glyphicon-upload"></span></h4>
-                <p>Webcomics (also known as online comics or Internet comics) are comics published on a website. While many are published exclusively on the web, others are also published in magazines, newspapers or in books.</p>
+                <p>Webcomics (also known as online comics or Internet comics) are comics published on a website. While many are published exclusively on the web, others are also published in magazines, newspapers or in books. others are also published in magazines, newspapers or in books.</p>
               </div>
             </div>
           </div> 
@@ -142,18 +143,90 @@
             <div class="panel panel-default">
               <div class="panel-body">
                 <h4>Youtube videos <span class="glyphicon glyphicon-facetime-video"></span></h4>
-                <p>YouTube is a free video sharing website that lets people upload, view, and share videos. Videos can be rated with a like or dislike, most videos can be commented on if logged in to an account.</p>
+                <p>YouTube is a free video sharing website that lets people upload, view, and share videos. Videos can be rated with a like or dislike, most videos can be commented on if logged in to an account. most videos can be commented on if logged in to an account.</p>
               </div>
             </div>
           </div> 
         </div> <!-- end of row -->
       </section>
     </div>
+    <!-- footer -->
+    <footer>
+      <hr>
+      <div class="container text-center">
+      <h3>Subscribe for more free stuff</h3>
+      <p>enter your name and email</p>
+      <hr>
+      <form action="" class="form-inline">
+      <div class="form-group">
+        <label for="subscription">subscribe</label>
+        <input type="text" class="form-control" id="subscription" placeholder="your name" name="">
+      </div>
+       <div class="form-group">
+        <label for="email">email add.</label>
+        <input type="text" class="form-control" id="email" placeholder="your e-mail" name="">
+      </div>
+      <button type="submit" class="btn btn-info">subscribe</button>
+      <hr>
+        
+      </form>
+      <hr>
+      <ul class="list-inline">
+        <li><a href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="" target="_blank"><i class="fa fa-google-plus"></i></a></li> 
+        <li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="" target="_blank"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="" target="_blank"><i class="fa fa-instagram"></i></a></li>
+      </ul>
 
+      <!--
+      <ul class="social">
+        <li><a href="" target="_blank"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="" target="_blank"><i class="fa fa-google-plus"></i></a></li> 
+        <li><a href="" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="" target="_blank"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="" target="_blank"><i class="fa fa-instagram"></i></a></li>
+      </ul>
+      -->
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>  
+      $(document).ready(function()
+      {
+        $(window).scroll(function()
+        {
+          var y=$(this).scrollTop();
+          if(y>=100)
+          {
+            $('#arrow').addClass('animate');
+          }
+          if(y<100)
+          {
+            $('#arrow').removeClass('animate');
+          }
+        });
+      });      
+    </script> <!-- end of arrow script -->
+    <script>  
+      $(document).ready(function()
+      {
+        $(window).scroll(function()
+        {
+          var y=$(this).scrollTop();
+          if(y>=100)
+          {
+            $('#colarge').addClass('animate');
+          }
+          if(y<100)
+          {
+            $('#colarge').removeClass('animate');
+          }
+        });
+      });      
+    </script> <!-- end of colarge script -->
   </body>
 </html>
