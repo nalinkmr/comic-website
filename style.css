@@ -11,6 +11,32 @@
 	width: 100%;
 	background-color: #c3d7df;
 }
+.animate{
+	-moz-transition: 1s ease-in-out;
+	-webkit-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+
+
+	-moz-animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+img#arrow.animate{
+	-moz-transform: translate(7cm,0);
+	-webkit-transform: translate(7cm,0);
+	transform: translate(7cm,0);
+
+
+}
+img#colarge.animate{
+	-moz-transform: translate(-7cm,0);
+	-webkit-transform: translate(-7cm,0);
+	transform: translate(-7cm,0);
+}
 .list-inline{
 	list-style-type: none;
 	text-align: center;
