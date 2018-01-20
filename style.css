@@ -26,16 +26,16 @@
 }
 
 img#arrow.animate{
-	-moz-transform: translate(-7cm,0);
-	-webkit-transform: translate(-7cm,0);
-	transform: translate(-7cm,0);
+	-moz-transform: translate(7cm,0);
+	-webkit-transform: translate(7cm,0);
+	transform: translate(7cm,0);
 
 
 }
 img#colarge.animate{
-	-moz-transform: translate(7cm,0);
-	-webkit-transform: translate(7cm,0);
-	transform: translate(7cm,0);
+	-moz-transform: translate(-7cm,0);
+	-webkit-transform: translate(-7cm,0);
+	transform: translate(-7cm,0);
 }
 .list-inline{
 	list-style-type: none;
